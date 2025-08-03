@@ -46,3 +46,6 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Updated on ${timestamp}" || exit 0
         git push
+    - name: Push directory to another repository directory
+      uses: XenonMolecule/github-action-push-to-another-repository@0.1.0
+      
