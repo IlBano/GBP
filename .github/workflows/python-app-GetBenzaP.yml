@@ -55,5 +55,6 @@ jobs:
         destination-github-username: 'IlBano'
         destination-repository-name: 'ilbano.github.io'
         user-email: a-obani@gmail.com
+        target-directory: output
         target-branch: main
       
