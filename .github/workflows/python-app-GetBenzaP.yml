@@ -48,4 +48,12 @@ jobs:
         git push
     - name: Push directory to another repository directory
       uses: XenonMolecule/github-action-push-to-another-repository@0.1.0
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source-directory: 'output'
+        destination-github-username: 'IlBano'
+        destination-repository-name: 'ilbano.github.io'
+        user-email: a-obani@gmail.com
+        target-branch: main
       
