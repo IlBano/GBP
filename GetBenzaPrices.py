@@ -26,7 +26,7 @@ if scode != 200:
 myIds="21857;37665;50229;21401;10332;30084;58068;44647"
 myIdsNames=["Pontelungo","IP Zeccone","IP Vigentina","Esso San Genesio","IP CC Carrefour","ENI TASSO","ENI Coop","Tamoil Montegrappa"]
 
-with open("Benza.html", "w") as text_file:
+with open("./output/Benza.html", "w") as text_file:
     text_file.write("<html><body><table>")
     text_file.write("<tr><th>Distributore</th><th width='150' align='center'>Prezzo</th><th>Data prezzo</th></tr>\n")
     for station in data['results']:
@@ -43,3 +43,4 @@ with open("Benza.html", "w") as text_file:
         text_file.write(f"<tr><td>{myIdsNames[myIds.split(';').index(str(station['id']))]}</td><td align='center'>{fprice}</td><td>{formatted_date}</td></tr>\n")
     text_file.write("</table></body></html>")
     
+
